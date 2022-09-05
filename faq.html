@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <link href="./assets/css/faq.css" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="navbar-content" id="navbar">
+        <a class="my-logo" id="logo" onClick="my_scroll_to('#problem')">Diverse Image Dataset Collection</a>
+        <div class="links" id="links">
+            <a class="tab" onClick="my_scroll_to('#problem')"> Problem</a> 
+            <a class="tab" onClick="my_scroll_to('#solution')" >Solution</a> 
+            <a class="tab" onClick="my_scroll_to('#ourTeam')" >Our Team</a> 
+            <a class="tab" href="./faq.html" >FAQ</a> 
+            <a class="tab" onClick="my_scroll_to('.my-footer')" >Contacts</a> 
+            <a class="tab" href="https://idontmeananything.ir/parastoo/" target="_blank">Let's take 3 selfies</a>
+        </div>
+        <a id="bars">
+            <i class="fa fa-bars" id="bars-inside"></i>
+        </a>
+    </div>
+
+    <!-- questions -->
+
+    <div class="questions">
+        <!----------------------------------------- 1 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="item">
+            <div class="question"><span class="index">1.</span>Why is face recognition important? <span id="expand"><i class="fa fa-angle-double-down" aria-hidden="true"></i></span></div>
+            <div class="answer">Face recognition is a highly complex cognitive task that humans rely on and perform on a daily basis. With the rapid technological progress, face recognition is becoming a necessary and pervasive task for the machines to execute. From our smartphones and work environments to airline travel and criminal justice, facial recognition systems (FRS) are embedded in many aspects of our lives</div>
+        </div>
+        <!----------------------------------------- 2 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="item">
+            <div class="question"><span class="index">2.</span>What are the examples of using image recognition in the modern world? <span id="expand"><i class="fa fa-angle-double-down" aria-hidden="true"></i></span></div>
+            <div class="answer q-2">Entrance to the buildings …?? Automated soup container<img src="./assets/img/question2.jpg"></div>
+        </div>
+        <!----------------------------------------- 3 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="item">
+            <div class="question"><span class="index">3.</span>What happens when the reference datasets are not diverse?<span id="expand"><i class="fa fa-angle-double-down" aria-hidden="true"></i></span></div>
+            <div class="answer">FRS have been recently scrutinized for their failure to effectively identify certain demographic groups (2, 5, 9). Research suggests that these systems can be especially biased against people of color and women (7). It is shown that in comparison to the identification error rate of 0.8% for white men, FRS fail to identify roughly 35% of the darker-skinned women (3). It has been further argued that the use of FRS may potentially aggravate structural racism and violate basic human rights (8). <br>
+                Examples of failures: Video example of soup …. 
+                <div class="vids">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xzsxXqZXs34?controls=0&amp;start=186&amp;end=3:59" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BDDGhNHtr-c?controls=0&amp;start=81&amp;end=2:09" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QxuyfWoVV98?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UG_X_7g63rY?controls=0&amp;start=39&amp;end=1:08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- https://youtu.be/xzsxXqZXs34     start= 3:06    end=3:59
+                https://www.youtube.com/watch?v=BDDGhNHtr-c    start= 1:21   end= 2:09
+                https://www.youtube.com/watch?v=QxuyfWoVV98  
+                https://www.youtube.com/watch?v=UG_X_7g63rY  start=0:39 end=1:08 -->
+            </div>
+        </div>
+        <!----------------------------------------- 4 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="item">
+            <div class="question"><span class="index">4.</span>What is wrong with current datasets?<span id="expand"><i class="fa fa-angle-double-down" aria-hidden="true"></i></span></div>
+            <div class="answer">
+                Current training datasets lack demographic diversity and are subject to unethical methods of acquisition. As a consequence, existing FRS generate severe negative externalities on the minorities.
+                Daset number 1<br>
+                Daset number 2<br>
+                Daset number 3<br>
+             </div>
+        </div>
+        <!----------------------------------------- 5 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="item">
+            <div class="question"><span class="index">5.</span>How MPI is going to use the images?<span id="expand"><i class="fa fa-angle-double-down" aria-hidden="true"></i></span></div>
+            <div class="answer">
+                Publish for any use? For how long? Can it be used to make money?
+             </div>
+        </div>
+        <!----------------------------------------- 6 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="item">
+            <div class="question"><span class="index">6.</span>Why is it important to take the images after a 2 months interval?<span id="expand"><i class="fa fa-angle-double-down" aria-hidden="true"></i></span></div>
+            <div class="answer">
+                ???
+             </div>
+        </div>
+        <!----------------------------------------- 7 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="item">
+            <div class="question"><span class="index">7.</span>How can I join the research group and get paid?<span id="expand"><i class="fa fa-angle-double-down" aria-hidden="true"></i></span></div>
+            <div class="answer">
+                You can become one of us by getting an agent role. An agent has the responsibility of taking pictures from groups of people and getting paid for each 10 person. To get more information please contact this email address: …..@.....com.
+             </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="my-footer">
+        <span id="goToTop"><i class="fa fa-angle-double-up"></i></span>
+        <div class="easy-access">
+            <h1>Easy access</h1>
+            <hr>
+            <ul>
+                <li><a onClick="my_scroll_to('#problem')"> Problem</a></li>
+                <li><a onClick="my_scroll_to('#solution')" >Solution</a></li>
+                <li><a onClick="my_scroll_to('#ourTeam')" >Our Team</a></li>
+                <li><a href="./faq.html" >FAQ</a></li>
+                <li><a onClick="my_scroll_to('.my-footer')" >Contacts</a></li> 
+                <li><a href="https://1labs.pionic.ir/" target="_blank">Let's take 3 selfies</a></li>
+           </ul>
+        </div>
+        <div class="contact">
+            <h1>Contact us</h1>
+            <hr>
+            <div class="email">
+                <p>Address</p>
+                <p>Max-Planck-Ring 4, 72076 Tübingen, Germany</p>
+    
+                <p>E-mail</p>
+                <a href="mailto:blablabla@blabla.com">blablabla@blabla.com</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/faq.js"></script>
+
+</body>
+</html>
