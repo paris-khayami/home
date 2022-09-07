@@ -4,9 +4,9 @@ function vh(v) {
     return (v * h) / 100;
 }
 function my_scroll_to(id){
-    if(!window.location.href.slice(window.location.href.length-'index/'.length,window.location.href.length).includes('index.html')){
-        console.log('fuck');
-        window.location.href='/index.html';
+    //if(!window.location.href.slice(window.location.href.length-'index/'.length,window.location.href.length).includes('index.html')){
+    if(window.location.href.includes('.html'){
+        window.location.href='/home';
     }
     $('html, body').animate({
         scrollTop: $(id).offset().top - vh(9)
