@@ -5,7 +5,7 @@ function vh(v) {
 }
 function my_scroll_to(id){
     //if(!window.location.href.slice(window.location.href.length-'index/'.length,window.location.href.length).includes('index.html')){
-    if(window.location.href.includes('.html'){
+    if(window.location.href.includes('.html')){
         window.location.href='/home';
     }
     $('html, body').animate({
