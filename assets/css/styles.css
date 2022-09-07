@@ -1,9 +1,9 @@
-@media screen and (min-width:1400px){
-
-* {
-    font-size: 1.4rem;
-}    
+@media screen and (min-width:1700px){
+    * {
+        font-size: 1.4rem;
+    }    
 }
+
 .my-margin{
     margin-left:2%;
     margin-right:2%;
@@ -54,7 +54,7 @@ html {
     font-weight:bold;
     margin-left:0 !important;
     margin-right:auto !important;
-    font-size:1.2em !important;
+    font-size:1.1em !important;
     padding: 0.8em;
     margin-top: 0 !important;
     margin-bottom:0 !important;
@@ -108,7 +108,7 @@ html {
     display:none;
     transition: all 1s;
 }
-@media screen and (max-width: 950px){
+@media screen and (max-width: 1070px){
     .navbar-content .my-logo{
         font-size:0.9em !important;
     }
@@ -384,6 +384,10 @@ html {
     #takeSelfie .content h1,#takeSelfie .content p{
         font-size:1.4em !important;
     }
+}
+/* ---------------------------------------------Become us-------------------------------------------------- */
+#becomeUs a{
+    background-color:var(--navbar-active-color);
 }
 /* ---------------------------------------------Footer-------------------------------------------------- */
 #goToTop{

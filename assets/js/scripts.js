@@ -4,8 +4,9 @@ function vh(v) {
     return (v * h) / 100;
 }
 function my_scroll_to(id){
-    if(window.location.href.slice(window.location.href.length-'home/'.length,window.location.href.length).includes('.html')){
-        window.location.href='/home';
+    if(!window.location.href.slice(window.location.href.length-'index/'.length,window.location.href.length).includes('index.html')){
+        console.log('fuck');
+        window.location.href='/index.html';
     }
     $('html, body').animate({
         scrollTop: $(id).offset().top - vh(9)
@@ -13,7 +14,7 @@ function my_scroll_to(id){
 }
 $('#navbar').click((e)=>{
     console.log(e.target.classList.contains('tab'),e.target.id,e.target.classList);
-    if($(window). width() > 950) return;
+    if($(window). width() > 1070) return;
     if(e.target.classList.contains('tab')==true || (e.target.classList.contains('my-logo')==true && state==true)){
         console.log('in');
         $('.navbar-content .links').toggleClass('show-links');
@@ -22,7 +23,7 @@ $('#navbar').click((e)=>{
     }
 });
 $('#bars').click(()=>{
-    if($(window). width() > 950) return;
+    if($(window). width() > 1070) return;
     $('.navbar-content .links').toggleClass('show-links');
     $('#bars i').toggleClass('fa-bars').toggleClass('fa-times');
     state=!state;
