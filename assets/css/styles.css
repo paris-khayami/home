@@ -35,8 +35,8 @@ html {
 }
 /* ---------------------------------------------Navbar-------------------------------------------------- */
 .navbar-content{
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
+/*     border-bottom-left-radius: 30%; */
+/*     border-bottom-right-radius: 30%; */
     border:0;
     border-bottom: .5rem solid var(--navbar-button-color);
     padding-top: 5px;
