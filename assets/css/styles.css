@@ -38,7 +38,7 @@ html {
 /*     border-bottom-left-radius: 30%; */
 /*     border-bottom-right-radius: 30%; */
     border:0;
-    border-bottom: .5rem solid var(--navbar-button-color);
+    border-bottom: .3rem solid var(--navbar-button-color);
     padding-top: 5px;
     /*height:15vh;*/
     z-index:300;
@@ -128,9 +128,9 @@ html {
     transition: all 1s;
 }
 @media screen and (max-width: 1212px){
-    .navbar-content{
+/*    .navbar-content{
         border:0 !important;
-    }
+    }*/
     .links .tab:last-child{
         height: auto !important;
     }
