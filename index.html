@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diverse Image Dataset Collection</title>
+    <title>Faces</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="./assets/css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar-content" id="navbar">
-        <a class="my-logo" id="logo" onClick="my_scroll_to('#problem')">Diverse Image Dataset Collection</a>
-        <div class="links" id="links">
-            <a class="tab" onClick="my_scroll_to('#problem')"> Problem</a> 
-            <a class="tab" onClick="my_scroll_to('#solution')" >Solution</a> 
-            <a class="tab" onClick="my_scroll_to('#ourTeam')" >Our Team</a> 
+
+   <div class="navbar-content" id="navbar">
+        <a class="my-logo" id="logo" href="./index.html">
+            <img src="./assets/img/mpg-logo-new.png" width="100%" height="auto">
+            <!-- <br>
+            Diverse Image Dataset Collection -->
+        </a>
+         <div class="links" id="links">
+            <a class="tab" href="./index.html#problem"> Problem</a> 
+            <a class="tab" href="./index.html#solution" >Solution</a> 
+            <a class="tab" href="./index.html#ourTeam" >Our Team</a> 
             <a class="tab" href="./faq.html">FAQ</a> 
-            <a class="tab" href="./getPaid.html">Get Paid</a> 
-            <a class="tab" onClick="my_scroll_to('.my-footer')" >Contacts</a> 
-            <a class="tab" href="https://www.idontmeananything.ir/" target="_blank">Let's take 3 selfies</a>
+            <a class="tab" href="./getPaid.html">Become a Freelancer</a> 
+            <a class="tab" href="./index.html#footer" >Contacts</a> 
+            <a class="tab" href="https://www.idontmeananything.ir/" target="_blank">Let's take a few selfies</a>
         </div>
         <a id="bars">
             <i class="fa fa-bars" id="bars-inside"></i>
         </a>
     </div>
-
     <!-- ------------------------------------------------------------------------------------- -->
 
     <div class="mx-auto" id="problem">
@@ -39,7 +43,7 @@ For example, of about 100 databases currently existing for academic purposes, on
 -->
                  AI systems such as facial recognition technologies are shown to be biased against
 some demographic groups. One reason is that these systems haven’t seen enough diverse
-images to learn from them. Most of the image datasets that we currently use for building facial recognition technologies, majorly contain
+images to learn from. Most of the image datasets that we currently use for building facial recognition technologies primarily contain
                  images of light-skinned male individuals. No wonder our systems are biased! </p>
             
             <p> <!--We call an image data set a "fair" data set if it has diversity in terms of genders, races and ages. 
@@ -59,7 +63,7 @@ images to learn from them. Most of the image datasets that we currently use for 
             <div>
                 <h1>How can I help solve this problem?</h1>
                 <p>We need your selfie images to make a diverse facial image dataset.</p>
-                <a class="btn btn-lg btn-warning btn-fill" href="../Survey/survey.html">Start without reading more!</a>
+                <a class="btn btn-lg btn-warning btn-fill darker-hover" href="../Survey/survey.html">Start without reading more!</a>
             </div>
             <i class="fa fa-angle-double-down"></i>
         </div>
@@ -78,10 +82,8 @@ images to learn from them. Most of the image datasets that we currently use for 
                 <hr>
                 <p>The current facial image datasets, not only lack diversity in important aspects such as age, gender, race, and skin tone, but they are also often 
                     not ethically sourced. As a group of scientists who work on ethical AI, with your help, we want to build the largest ethically sourced
-                    and diverse facial image dataset. Your images are collected only for ressearch purposes and we ask you to self-identify your demographical
-                    attributes.
-
-!</p>
+                    and diverse facial image dataset. Your images are collected only for research purposes and we ask you to self-identify your demographical
+                    attributes.</p>
                 <br>
                
                 <!-- <br>
@@ -95,8 +97,9 @@ images to learn from them. Most of the image datasets that we currently use for 
     <!-- ------------------------------------------------------------------------------------- -->
 
     <div class="my-section mx-auto my-padding" id="ourTeam">
-        <h1 class="text-center">Who are we?</h1>
-        <small class="text-center subtitle" style="display:block;">Get to know us better</small>
+        <h1><i class="fa fa-angle-double-right"></i>Who are we?</h1>
+        <!-- <h1><i class="fa fa-angle-double-right"></i> What is the problem? </h1> -->
+        <small class="subtitle" style="display:block;">Get to know us better</small>
         <hr>
         <p>
             We are a group of scientists at the Max Planck Institute for Intelligent Systems located 
@@ -182,26 +185,26 @@ develop effective solutions to the problem of biased AI. -->
         <h1 class="text-center">Help us collect more images</h1>
         <hr>
         <div class="inner d-flex">
-            <a href="./assets/Freelancers.pdf" download class="btn mx-auto">
-               Paid Freelancing
+            <a href="./assets/Freelancers.pdf" download class="btn mx-auto darker-hover">
+               &nbsp &nbsp &nbsp Paid Freelancing &nbsp &nbsp &nbsp
             </a>
         </div>
     </div>
 
-    <div class="my-footer">
+    <div class="my-footer" id="footer">
         <span id="goToTop"><i class="fa fa-angle-double-up"></i></span>
         <div class="easy-access">
             <h1>Easy access</h1>
             <hr>
             <ul>
-                <li><a onClick="my_scroll_to('#problem')"> Problem</a></li>
-                <li><a onClick="my_scroll_to('#solution')" >Solution</a></li>
-                <li><a onClick="my_scroll_to('#ourTeam')" >Our Team</a></li>
+                <li><a href="./index.html#problem"> Problem</a></li>
+                <li><a href="./index.html#solution">Solution</a></li>
+                <li><a href="./index.html#ourTeam">Our Team</a></li>
                 <li><a href="./faq.html" >FAQ</a></li>
                 <li><a href="./LegalandEthicalTerms.html" >Legal and Ethical Terms</a></li>
-                <li><a href="./getPaid.html" >Get Paid</a></li>
-                <li><a onClick="my_scroll_to('.my-footer')" >Contacts</a></li> 
-                <li><a href="https://www.idontmeananything.ir/" target="_blank">Let's take 3 selfies</a></li>
+                <li><a href="./getPaid.html" >Beecome a Freelancer</a></li>
+                <li><a href="./index.html#footer">Contacts</a></li>
+                <li><a href="https://www.idontmeananything.ir/" target="_blank">Let's take a few selfies</a></li>
            </ul>
         </div>
         <div class="contact">
@@ -212,7 +215,7 @@ develop effective solutions to the problem of biased AI. -->
                 <p>Max Planck Institute for Inteligent Systems, Max-Planck-Ring 4, 72076 Tübingen, Germany</p>
     
                 <p>E-mail</p>
-                <a href="mailto:info.faces@tuebingen.mpg.de">info.faces@tuebingen.mpg.de</a>
+                <a id="email-adrs" href="mailto:info.faces@tuebingen.mpg.de">info.faces@tuebingen.mpg.de</a>
             </div>
         </div>
     </div>
