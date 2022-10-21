@@ -44,3 +44,68 @@ $(document).scroll(function () {
 $('#goToTop').click(()=>{
     $(window).scrollTop(0);
 });
+
+
+/***************************** Youtube JS **********************************/
+  // create youtube player
+  var player1, player2;
+  function onYouTubePlayerAPIReady() {
+      player1 = new YT.Player('player1', {
+        width: '100%',
+        height: 'auto',
+        videoId: 'aNSpJ1l3SNQ?controls=0',
+        playerVars: {
+            loop: 1,
+            mute: 0,
+            controls: 0,
+            rel: '0',
+            iv_load_policy: '3'
+          },
+        events: {
+          onReady: onPlayer1Ready,
+          onStateChange: onPlayer1StateChange
+        }
+      });
+
+      player2 = new YT.Player('player2', {
+        width: '100%',
+        height: 'auto',
+        videoId: '7mOfq-EafGE',
+        playerVars: {
+            loop: 1,
+            mute: 0,
+            controls: 0,
+            rel: '0',
+            iv_load_policy: '3'
+          },
+        events: {
+          onReady: onPlayer1Ready,
+          onStateChange: onPlayer1StateChange
+        }
+      });
+  }
+
+  // autoplay video
+  function onPlayer1Ready(event) {
+      event.target.playVideo();
+  }
+
+  // when video ends
+  function onPlayer1StateChange(event) {        
+      if(event.data === 0) {          
+          // alert('done');
+      }
+  }
+
+// autoplay video
+function onPlayer2Ready(event) {
+    event.target.playVideo();
+}
+
+// when video ends
+function onPlayer2StateChange(event) {        
+    if(event.data === 0) {          
+        // alert('done');
+    }
+}
+
