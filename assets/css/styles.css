@@ -515,3 +515,10 @@ html {
         /* column-gap:10%; */
     }
 }
+/* ---------------------------------------------imprint-------------------------------------------------- */
+
+.copyright{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
