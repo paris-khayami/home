@@ -53,14 +53,19 @@ $('#goToTop').click(()=>{
       player1 = new YT.Player('player1', {
         width: '100%',
         height: 'auto',
-        videoId: 'aNSpJ1l3SNQ?controls=0',
+        videoId: 'aNSpJ1l3SNQ?controls=1&loop=1',
         playerVars: {
-            loop: 1,
-            mute: 0,
-            controls: 0,
-            rel: '0',
-            iv_load_policy: '3'
-          },
+            'loop': 1,
+            'mute': 0,
+            'controls': 1,
+            'color': 'white', 
+            'theme': 'light', 
+            'rel': 0,
+            'autoplay': 0,
+            'iv_load_policy': '3',
+            'color': 'white', 
+            'theme': 'light'
+        },
         events: {
           onReady: onPlayer1Ready,
           onStateChange: onPlayer1StateChange
@@ -72,11 +77,16 @@ $('#goToTop').click(()=>{
         height: 'auto',
         videoId: '7mOfq-EafGE',
         playerVars: {
-            loop: 1,
-            mute: 0,
-            controls: 0,
-            rel: '0',
-            iv_load_policy: '3'
+            'autoplay': 0,
+            'loop': 1,
+            'mute': 0,
+            'controls': 1,
+            'color': 'white', 
+            'theme': 'light', 
+            'rel': 0,
+            'iv_load_policy': '3',
+            'color': 'white', 
+            'theme': 'light'
           },
         events: {
           onReady: onPlayer1Ready,
@@ -85,15 +95,33 @@ $('#goToTop').click(()=>{
       });
   }
 
-  // autoplay video
+//   autoplay video
   function onPlayer1Ready(event) {
       event.target.playVideo();
   }
 
   // when video ends
   function onPlayer1StateChange(event) {        
-      if(event.data === 0) {          
-          // alert('done');
+      if(event.data === 0) {   
+        event.target.mute();
+        event.target.playVideo();
+               
+        console.log('video is muted from now on');
+       
+        //   console.log(event.target.f.replaceWith(event.target.l);
+        // var done = false;
+        // function onPlayer1StateChange(event) {
+        //   if (event.data == YT.PlayerState.PLAYING && !done) {
+        //     setTimeout(stopVideo, 1000);
+        //     done = true;
+        //   }
+        // }
+        
+        // function stopVideo() {
+        //   player.stopVideo();
+        // }
+
+
       }
   }
 
@@ -106,6 +134,8 @@ function onPlayer2Ready(event) {
 function onPlayer2StateChange(event) {        
     if(event.data === 0) {          
         // alert('done');
+        //apparently copies the otheer video js functions
     }
 }
+
 

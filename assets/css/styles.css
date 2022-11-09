@@ -174,7 +174,34 @@ html {
 
  
 }
-/* ---------------------------------------------top-------------------------------------------------- */
+/* ---------------------------------------------Viedeo Players-------------------------------------------------- */
+.phone-video-player{
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .phone-video-player{
+        display:block;
+    }
+    
+    .api-player{
+        display:none;
+    }
+   
+}
+
+@media screen and (min-width: 481px) {
+    .phone-video-player{
+        display:none;
+    }
+    
+    .api-player{
+        display:block;
+    }
+}
+
+
+
 /* ---------------------------------------------problem-------------------------------------------------- */
 .my-section#problem{
     margin-top:0;
